@@ -1,9 +1,3 @@
-def beseda_v_stevilko(beseda):
-	stevilka = 0
-	for crka in beseda:
-		stevilka = stevilka*1000 + ord(crka)
-	return stevilka
-
 def stevilka_v_besedo(stevilka):
 	beseda = ""
 	while stevilka>0:
@@ -18,8 +12,6 @@ print("----------------------------------------------------------------------")
 sporocilo = int(input("Vnesite sporočilo: "))
 n = int(input("[ključ] vnesite n: "))
 e = int(input("[ključ] vnesite e: "))
-
-#sporocilo_stevilka = beseda_v_stevilko(sporocilo)
 
 sifrirano_sporocilo = ((sporocilo)**e)%n
 

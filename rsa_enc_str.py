@@ -4,13 +4,6 @@ def beseda_v_stevilko(beseda):
 		stevilka = stevilka*1000 + ord(crka)
 	return stevilka
 
-def stevilka_v_besedo(stevilka):
-	beseda = ""
-	while stevilka>0:
-		beseda = chr(stevilka%1000) + beseda
-		stevilka = stevilka//1000
-	return beseda
-
 print("----------------------------------------------------------------------")
 print("               Pozdravljeni v programu RSA OŠ Sostro                  ")
 print("                        za šifriranje sporočil                        ")
@@ -20,10 +13,7 @@ n = int(input("[ključ] vnesite n: "))
 e = int(input("[ključ] vnesite e: "))
 
 sporocilo_stevilka = beseda_v_stevilko(sporocilo)
-
 sifrirano_sporocilo = ((sporocilo_stevilka)**e)%n
-
-#sifrirano_sporocilo_beseda = stevilka_v_besedo(sifrirano_sporocilo)
 
 print("------------------ZAČETEK ŠIFRIRANEGA SPOROČILA-----------------------")
 print(sifrirano_sporocilo);

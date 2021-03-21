@@ -64,7 +64,6 @@ while not (tuji_stevili(e, m)):
 print("E: ", e)
 d = 1
 while not ((e * d) % m) == 1:
-#	print((e*d)%m)
 	d = d + 1
 
 
