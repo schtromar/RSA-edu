@@ -34,8 +34,8 @@ print("               Pozdravljeni v programu RSA OŠ Sostro                  ")
 print("                       za generiranje ključev                         ")
 print("----------------------------------------------------------------------")
 
-spodnja_meja = int(input("Vnesite spodnjo mejo: "))
-zgornja_meja = int(input("Vnesite zgornjo mejo: "))
+spodnja_meja = int(input("Vnesite spodnjo mejo: ") or 1000)
+zgornja_meja = int(input("Vnesite zgornjo mejo: ") or 10000)
 
 p = randint(spodnja_meja, zgornja_meja)
 while not prastevilo(p):
