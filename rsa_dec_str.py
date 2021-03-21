@@ -15,16 +15,16 @@ print("----------------------------------------------------------------------")
 print("               Pozdravljeni v programu RSA OŠ Sostro                  ")
 print("                        za šifriranje sporočil                        ")
 print("----------------------------------------------------------------------")
-sporocilo = input("Vnesite sporočilo: ")
+sporocilo = int(input("Vnesite sporočilo: "))
 n = int(input("[ključ] vnesite n: "))
 e = int(input("[ključ] vnesite e: "))
 
-sporocilo_stevilka = beseda_v_stevilko(sporocilo)
+#sporocilo_stevilka = beseda_v_stevilko(sporocilo)
 
-sifrirano_sporocilo = ((sporocilo_stevilka)**e)%n
+sifrirano_sporocilo = ((sporocilo)**e)%n
 
-#sifrirano_sporocilo_beseda = stevilka_v_besedo(sifrirano_sporocilo)
+sifrirano_sporocilo_beseda = stevilka_v_besedo(sifrirano_sporocilo)
 
 print("------------------ZAČETEK ŠIFRIRANEGA SPOROČILA-----------------------")
-print(sifrirano_sporocilo);
+print(sifrirano_sporocilo_beseda);
 print("-------------------KONEC ŠIFRIRANEGA SPOROČILA------------------------")
